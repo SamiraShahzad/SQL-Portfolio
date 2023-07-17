@@ -1,0 +1,24 @@
+--Create a clothing store database
+
+CREATE TABLE clothingstore (id Integer Primary key, name text, quantity integer, price integer, color text);
+Insert into clothingstore values (1,"T-shirt",22, 12.00, "blue");
+Insert into clothingstore values (2, "Shorts", 33, 12.00, "gray");
+Insert into clothingstore values (3, "sneakers", 12,25.00, "black");
+Insert into clothingstore values (4, "sandals", 13, 17.00, "beige");
+Insert into clothingstore values (5, "T-shirt", 14, 12.00, "pink");
+Insert into clothingstore values (6, "Blouse", 23, 25.00, "white");
+Insert into clothingstore values (7, "Blouse", 23, 25.00, "blue");
+insert into clothingstore values (8, "skirt", 40, 12.00, "black");
+insert into clothingstore values (9,"skirt", 20, 30.00, "gray");
+Insert into clothingstore values (10, "pants", 30, 45.00, "gray");
+Insert into clothingstore values (11, "pants", 30, 45.00, "white");
+Insert into clothingstore values (12, "sneakers", 12,25.00, "green");
+Insert into clothingstore values (13, "sneakers", 12,25.00, "yellow");
+Insert into clothingstore values (14, "socks", 12,5.00, "black");
+Insert into clothingstore values (15, "sneakers", 12,25.00, "beige");
+
+--display the database ordered by price. 
+Select * from clothingstore order by price asc;
+
+--Shows which clothing is black
+Select * from clothingstore where color = "black" order by color;
